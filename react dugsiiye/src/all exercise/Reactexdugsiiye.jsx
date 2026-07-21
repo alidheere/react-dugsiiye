@@ -24,8 +24,29 @@
 //         </div>
 //     )
 // }
+import { useState, useEffect } from "react";
+
+  
+const   Daaqad=()=>{
+      const [width, setWidth] = useState(window.innerWidth);
+
+       useEffect(() =>{
+        const handRezise=()=> setWidth(window.innerWidth);
+        window.addEventListener("resize", handRezise);
+        return ()=>{
+            window.removeEventListener('resize', handRezise)
+        }
+
+        
+      },[])
+    return(
+        <div>
+            <p> width {width}px</p>
+        </div>
+    )
+}
 
 
 
 
-export default UserCard;
+export default Daaqad;
