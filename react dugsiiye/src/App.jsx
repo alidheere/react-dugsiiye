@@ -1,20 +1,16 @@
 
-import ShoopingCart from"./Shooping";
-import Uses from "./all exercise/Exercise6";
-import Daaqad from"./all exercise/Reactexdugsiiye";
-import MuoseTrack  from "./all exercise/Exercise7";
+import Githubuser from "./all exercise/Exercise9";
+import Goorshegto from "./all exercise/Exercise8";
 
 function App() {
 
-  
-  return (
-    <>
-  <MuoseTrack/>
-    < Uses/>
-
-  {/* <Daaqad/> */}
-    </>
-  );
+    return(
+      <>
+      <Githubuser/>
+      <Goorshegto/>
+      </>
+      
+    )
 }
 
 export default App;

@@ -24,27 +24,36 @@
 //         </div>
 //     )
 // }
-import { useState, useEffect } from "react";
+/
+      <>
+  {/* // const[user, setUser]= useState([])
+  // useEffect(()=>{
+  //   const fachuser= async()=>{
+  //     try{
+  //       const response = await fetch('https://jsonplaceholder.typicode.com/users')
+  //       const data= await response.json()
+  //       setUser(data)
 
+  //     }catch(error){
+  //       console.error(error)
+  //     }
+  //   }
+  //   fachuser()
+  // },[])
   
-const   Daaqad=()=>{
-      const [width, setWidth] = useState(window.innerWidth);
-
-       useEffect(() =>{
-        const handRezise=()=> setWidth(window.innerWidth);
-        window.addEventListener("resize", handRezise);
-        return ()=>{
-            window.removeEventListener('resize', handRezise)
-        }
-
-        
-      },[])
-    return(
-        <div>
-            <p> width {width}px</p>
-        </div>
-    )
-}
+  // return (
+  //   <>
+  // <h2> lists user</h2>
+  // <ul>
+  //   {
+  //     user.map((u)=>(
+  //       <li>{u.email}</li>
+  //     ))
+  //   }
+//   // </ul> */}
+{/* //   <Githubuser/> */}
+//     </>
+// }
 
 
 
