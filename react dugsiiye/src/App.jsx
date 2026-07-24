@@ -1,16 +1,23 @@
 
-import Githubuser from "./all exercise/Exercise9";
-import Goorshegto from "./all exercise/Exercise8";
+
+import UserList from "./all exercise/Exercise10";
+import Toggle from "./all exercise/Toggle";
+import Fromlogin from "./all exercise/Exercise11";
+import Counter from "./all exercise/Exercise12";
+import CounterWith from "./Reducer";
+
 
 function App() {
 
-    return(
-      <>
-      <Githubuser/>
-      <Goorshegto/>
-      </>
-      
-    )
+
+return (
+  <>
+  <Toggle/> 
+  <Fromlogin/> 
+  <Counter/>
+ {/* <CounterWith/> */}
+  </>
+)
 }
 
 export default App;
