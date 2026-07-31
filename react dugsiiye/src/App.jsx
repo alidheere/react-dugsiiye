@@ -1,8 +1,8 @@
-import ContactFrom from "./all exercise/Exercise17/ContactFrom";
+import ContectAPP from "./all exercise/Exercise18/ContectAPP";
 function App() {
   return (
     <>
-<ContactFrom/>
+<ContectAPP/>
     </>
   );
 }
