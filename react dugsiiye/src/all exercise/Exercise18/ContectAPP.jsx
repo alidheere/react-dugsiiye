@@ -1,4 +1,4 @@
-
+import './Conect.css';
 import { useReducer, useState } from "react";
 import ContactForm from "./ContactForm";
 import ContactItem from "./ContactItem";
@@ -11,7 +11,7 @@ function ContectAPP() {
     console.log(state);
     const [editingContact, setIditingContact]=useState(null)
   return (
-    <div>
+    <div ClassName='container'>
         <h2> contact managament app</h2>
         <ContactForm
       

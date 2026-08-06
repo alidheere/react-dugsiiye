@@ -1,8 +1,12 @@
-import ContectAPP from "./all exercise/Exercise18/ContectAPP";
+import StudentForm from "./all exercise/Exercise24";
+import FormValidation from "./all exercise/Exercise22";
 function App() {
+
   return (
     <>
-<ContectAPP/>
+<StudentForm/>
+
+<FormValidation/>
     </>
   );
 }

@@ -3,6 +3,8 @@ import { useState, useContext } from 'react'
 import { useReducer,  } from 'react'
 import TodoContext from './TodoContext'
 import { initialState, reducer } from './Reducer'
+
+
 export const TodoForm = () => {
         // const[state, dispatch]=useReducer(reducer,initialState)
           const { dispatch } = useContext(TodoContext);
@@ -26,12 +28,14 @@ export const TodoForm = () => {
     <div>
       <h2> Todo app</h2>
         <input type="text"
+     className=" bg-gray-100 border-none rounded px-1 py-1 mr-2"
+  
         value={text}
         onChange={(e)=> setText(e.target.value)}
         placeholder="inter new todo"
         
         />
-        <button onClick={handleAdd}> add</button>
+        <button onClick={handleAdd} className="bg-violet-600 text-white px-2 py-2 mr-1 rounded"> add</button>
         {/* <ul>
             {
                 state.map(todo=>(

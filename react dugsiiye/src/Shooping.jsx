@@ -1,4 +1,5 @@
 import { useState } from "react";
+import style from "./shooping.module.css";
 const ShoopingCart = () => {
   const [products, setProducts] = useState([]);
   const [productName, setProductName] = useState("");
@@ -48,7 +49,7 @@ const ShoopingCart = () => {
   );
 
   return (
-    <div>
+    <div className={style.container}>
       <h1> simple shopping cart</h1>
       <h2> add a product</h2>
       <input
@@ -67,7 +68,7 @@ const ShoopingCart = () => {
       />
       <button onClick={handleAddProduct}> add to cart</button>
 
-      <div>
+      <div className={style.input}>
         {products.length > 0 ? (
           <div>
             <h3> product in cart</h3>
