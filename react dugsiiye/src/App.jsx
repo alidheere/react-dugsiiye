@@ -1,12 +1,9 @@
-import StudentForm from "./all exercise/Exercise24";
-import FormValidation from "./all exercise/Exercise22";
+import FormDev from "./all exercise/Exercise23";
 function App() {
 
   return (
     <>
-<StudentForm/>
-
-<FormValidation/>
+<FormDev/>
     </>
   );
 }
