@@ -6,13 +6,36 @@ import { useState } from 'react'
     const {dispatch}=useContext(TodoContext)
   return (
     <>
-        <li> <span   style={{
-                textDecoration: todo.completed ? 'line-through' : 'none', cursor: "pointer",}}
-                onClick={()=> dispatch({type: "toggle", payload: todo.id})}>
-                {todo.text}
+      
+
+     <li className="bg-rose-50 p-2 mt-2 rounded flex items-center justify-between">
+
+   
+      <span className="flex items-center gap-2">
+<input type="checkbox" checked={todo.completed} onChange={() => dispatch({ type: "toggle", payload: todo.id, }) } />
+        <span
+          style={{
+         textDecoration: todo.completed ? 'line-through' : 'none', cursor: "pointer",
+          }}
+        onClick={()=> dispatch({type: "toggle", payload: todo.id}) } >
+        
+          {todo.text} 
         </span>
-        <input type="checkbox" checked={isChecked} onChange={(e) => setIsChecked(e.target.checked)} />
-        <button onClick={()=> dispatch({type: "delete", payload: todo.id })} > Delete</button>
+
+      </span>
+
+  
+      <button
+        onClick={() =>
+          dispatch({
+            type: "dalete",
+            payload: todo.id,
+          })
+        }
+        className="text-red-500"
+      >
+        Delete
+      </button>
 
     </li>
     </>

@@ -26,16 +26,16 @@ export const TodoForm = () => {
         }
   return (
     <div>
-      <h2> Todo app</h2>
+    
         <input type="text"
      className=" bg-gray-100 border-none rounded px-1 py-1 mr-2"
   
         value={text}
         onChange={(e)=> setText(e.target.value)}
         placeholder="inter new todo"
-        
+         className="w-2/3 p-1 border rounded 2xl"
         />
-        <button onClick={handleAdd} className="bg-violet-600 text-white px-2 py-2 mr-1 rounded"> add</button>
+        <button onClick={handleAdd} className="bg-violet-600 text-white p-1 px-2 ml-2 rounded 2xl"> add</button>
         {/* <ul>
             {
                 state.map(todo=>(

@@ -1,9 +1,10 @@
-import FormDev from "./all exercise/Exercise23";
+import { TodoApp } from "./all exercise/todoapp/TodoApp";
+
 function App() {
 
   return (
     <>
-<FormDev/>
+<TodoApp/>
     </>
   );
 }
