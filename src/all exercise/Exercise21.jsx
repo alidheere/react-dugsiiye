@@ -18,7 +18,7 @@ const TailwindProject = () => {
             <div className="flex items-center justify-center">
               <p className="px-2 text-xl"> 🔔</p>
               <p className=" items-center w-12 h-12 rounded-full  object-cover border-4 bg-rose-400 text-white mt-2">
-                {" "}
+                {" "} mc
               </p>
             </div>
           </div>

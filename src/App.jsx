@@ -5,6 +5,7 @@
 import TailwindProject from "./all exercise/Exercise21";
 
 
+
 function App() {
 // const {isAuthencated,logout}=useContext(AuthContext)
 // const navigate= useNavigate()
@@ -14,15 +15,16 @@ function App() {
 // }
   return (
 <div >
-  <TailwindProject/>
-  {/* <h2> hello
-  </h2>
+<TailwindProject/>
+
+{/*   
 <nav className="flex items-center bg-gray-500 text-3xl text-white  space-x-4">
   <Link to="/login"> login </Link>
   {
     isAuthencated && (
     <>
       <Link to="/dashbrod"> dashbrod</Link>
+      <Link to="/cources"> cources</Link>
   <button className="bg-red-500 text-white p-2" onClick={hadleLogout}> logout</button>
     
     
@@ -32,7 +34,7 @@ function App() {
 
 </nav>
 
-<Outlet/> */}
+<Outlet/>  */}
 
 
 </div>
