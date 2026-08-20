@@ -1,34 +1,46 @@
 
-import { createBrowserRouter } from 'react-router';
+import { createBrowserRouter } from 'react-router-dom';
 import App from './App'
-import Dashbrod from './login page/Dashbrod';
+
 import Login from './login page/Login';
 import ProtectedRoute from './login page/ProtectedRoute';
-import Cources from './login page/Cources';
+
+import Home from './login page/Home';
+import NotFound from './login page/NotFound';
+import PostDtail from './login page/PostDtail';
+import CreatedPost from './login page/CreatedPost';
 
 
 const router= createBrowserRouter([
     {
         path:"/",
-        element: <App/>,
+        element:<App/>,
+        errorElement: <NotFound/>,
         children:[
                
                 {
-                    path: 'dashbrod',
+           
+                           index: true,
+                    element: <Home/>,
+                    
+                },
+                {
+                    path: 'posts/:postId',
+                        element: <PostDtail/>
+                },
+                {
+                    path: 'create',
                     element: (
-                        <ProtectedRoute element={<Dashbrod/>}/>
+                            <ProtectedRoute>
+                                <CreatedPost/>
+                            </ProtectedRoute>
                     )
                 },
                 {
                     path: 'login',
                     element: <Login/>
                 },
-                {
-                    path: 'cources',
-                    element:(
-                        <ProtectedRoute element={<Cources/>}/>
-                    )
-                }
+            
         ]
     }
 ])
