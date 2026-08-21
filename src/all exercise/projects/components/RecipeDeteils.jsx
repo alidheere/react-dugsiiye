@@ -1,5 +1,5 @@
-import { Link, useParams } from "react-router";
-import Recipes from "../pages/Recipes";
+import { Link, useParams } from "react-router-dom";
+
 import { recipes } from "../pages/Recipes";
 
 function RecipeDeteils() {

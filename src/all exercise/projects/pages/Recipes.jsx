@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 export const recipes = [
   {
     id: 1,
@@ -97,7 +97,7 @@ export const recipes = [
     description: 'Sweet treats'
   }
 ];
-function Recipes() {
+ export function Recipes() {
 // Recipe Data
  
 
@@ -146,4 +146,3 @@ function Recipes() {
   )
 }
 
-export default Recipes;
